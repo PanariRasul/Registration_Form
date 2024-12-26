@@ -19,39 +19,105 @@
             <table class="Personl_info">
                 <tr>
                     <td><label for="First_name">First Name</label></td>
-                    <td><input class="input_box" type="text" name="First_name" id="First_name" placeholder="Ex: Rasul"
-                            required></td>
+                    <td>
+                        <!-- <input class="input_box" type="text" name="First_name" id="First_name" placeholder="Ex: Rasul"
+                            required > -->
+                        <div class="tooltip-container">
+                            <input class="input_box" type="text" name="First_name" id="First_name"
+                                placeholder="Ex: Rasul" required>
+                            <span class="tooltip-text">Enter your first name</span>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="surname">Surname</label></td>
-                    <td><input class="input_box" type="text" name="surname" id="surname" placeholder="Ex: Panari"
-                            optional></td>
+                    <td>
+                        <!-- <input class="input_box" type="text" name="surname" id="surname" placeholder="Ex: Panari"
+                            optional> -->
+
+                        <div class="tooltip-container">
+                            <input class="input_box" type="text" name="surname" id="surname" placeholder="Ex: Panari"
+                                required>
+                            <span class="tooltip-text">Enter your Surname</span>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="Phone">Mobile Number</label></td>
-                    <td><input class="input_box" type="tel" name="Phone" id="Phone" placeholder="Ex: 7204986825"
-                            required></td>
+                    <td>
+                        <!-- <input class="input_box" type="tel" name="Phone" id="Phone" placeholder="Ex: 7204986825"
+                            required> -->
+
+                        <div class="tooltip-container">
+                            <input class="input_box" type="tel" name="Phone" id="Phone" placeholder="Ex: 7204986825"
+                                required>
+                            <span class="tooltip-text">Enter a phone number</span>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="email">Email</label></td>
-                    <td><input class="input_box" type="email" name="email" id="email"
-                            placeholder="Ex: panarirasul@gmail.com" required></td>
+                    <td>
+                        <!-- <input class="input_box" type="email" name="email" id="email"
+                            placeholder="Ex: panarirasul@gmail.com" required> -->
+
+                        <div class="tooltip-container">
+                            <input class="input_box" type="email" name="email" id="email"
+                                placeholder="Ex: panarirasul@gmail.com" required>
+                            <span class="tooltip-text">Enter a email address</span>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="Password">Password</label></td>
-                    <td><input class="input_box" type="password" name="Password" id="Password"
-                            placeholder="Enter Password" required></td>
+                    <td>
+                        <!-- <input class="input_box" type="password" name="Password" id="Password"
+                            placeholder="Enter Password" required> -->
+
+                        <div class="tooltip-container">
+                            <input class="input_box" type="password" name="Password" id="Password"
+                                placeholder="Enter Password" required>
+                            <span class="tooltip-text">Your password should be at least 8 characters</span>
+                        </div>
+                    </td>
                 </tr>
 
                 <tr>
                     <td><label for="Confirm_Password">Confirm Password</label></td>
-                    <td><input class="input_box" type="password" name="Confirm_Password" id="Confirm_Password"
-                            placeholder="Confirm Password" required>
+                    <td>
+                        <!-- <input class="input_box" type="password" name="Confirm_Password" id="Confirm_Password"
+                            placeholder="Confirm Password" required> -->
+
+                        <div class="tooltip-container">
+                            <input class="input_box" type="password" name="Confirm_Password" id="Confirm_Password"
+                                placeholder="Confirm Password" required>
+                            <span class="tooltip-text">Re-enter your password</span>
+                        </div>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="DOB">DOB</label></td>
-                    <td><input type="date" name="DOB" class="input_box" id="DOB" required></td>
+                    <td>
+                        <!-- <input type="date" name="DOB" class="input_box" id="DOB" required> -->
+
+                        <div class="tooltip-container">
+                            <input type="date" name="DOB" class="input_box" id="DOB" required>
+                            <span class="tooltip-text">Select your date of birth</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age</label></td>
+                    <td>
+                        <!-- <input type="number" name="age" class="input_box" id="age" placeholder="Enter Your Age" required
+                            min="18" max="100"> -->
+
+                        <div class="tooltip-container">
+                            <input type="number" name="age" class="input_box" id="age" placeholder="Enter Your Age"
+                                required min="18" max="100">
+                            <span class="tooltip-text">Enter your age (18-100)</span>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><label>Gender</label></td>
@@ -106,12 +172,18 @@
                 <tr>
                     <td><label>Delivery Mode</label></td>
                     <td>
-                        <input class="check_box" type="checkbox" name="Mode" value="Online" id="Online">
+                        <input class="check_box" type="radio" name="Mode" value="Online" id="Online">
                         <label for="Online">ONLINE</label>
-                        <input class="check_box" type="checkbox" name="Mode" value="Offline" id="Offline">
+                        <input class="check_box" type="radio" name="Mode" value="Offline" id="Offline">
                         <label for="Offline">OFFLINE</label>
                     </td>
                 </tr>
+                <tr>
+                    <td><label for="instituteName">Institute Name</label></td>
+                    <td><input class="input_box" type="text" name="instituteName" id="instituteName" value="TAP ACADEMY"
+                            readonly required></td>
+                </tr>
+
                 <tr>
                     <td><label for="comment">Comment</label></td>
                     <td><textarea name="comment" id="comment" cols="40" rows="5"
