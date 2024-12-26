@@ -166,7 +166,7 @@ input[readonly] {
     position: absolute;
     z-index: 1;
     bottom: 0%;
-    left: 130%;
+    left: 150%;
     margin-left: -75px;
     opacity: 0;
     transition: opacity 0.3s;
